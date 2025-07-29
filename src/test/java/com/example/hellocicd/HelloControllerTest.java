@@ -1,4 +1,4 @@
-package com.example.hello_ci_cd;
+package com.example.hellocicd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class HelloControllerTest {
         try {
             mockMvc.perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Hello CI/CD 🚀"));
+            .andExpect(content().string("Hello CICD"));
         } catch (Exception e) {
             e.printStackTrace();
         }
