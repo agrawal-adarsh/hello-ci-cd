@@ -19,7 +19,7 @@ public class HelloControllerTest {
             mockMvc.perform(get("/"))
             .andExpect(status().isOk())
             .andExpect(content().string("Hello CICD"));
-            System.out.println("Hello ");
+            System.out.println("Hello man");
         } catch (Exception e) {
             e.printStackTrace();
         }
