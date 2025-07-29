@@ -21,7 +21,7 @@ jobs:
                   java-version: 17 
                   
             - name: Build with Maven
-              run: mvn clean install -DskipTest=false
+              run: mvn clean install -DskipTest
 
             - name: Run test
               run: mvn test
